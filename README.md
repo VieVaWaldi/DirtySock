@@ -1,4 +1,4 @@
-## CVE-2019-7304 Sock
+## CVE-2019-7304 DirtySock
 
 ### Ressourcen:
 
