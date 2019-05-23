@@ -1,0 +1,2 @@
+sudo systemctl stop snapd.service snapd.socket
+sudo SNAPD_DEBUG=1 SNAPD_DEBUG_HTTP=3 ./snapd
