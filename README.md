@@ -11,4 +11,7 @@ https://www.exploit-db.com/exploits/46362
 https://initblog.com/2019/dirty-sock/
 
 snapd source code: https://github.com/snapcore/snapd (HACKING.md zum debuggen)
+
 snapd API doc: https://github.com/snapcore/snapd/wiki/REST-API
+
+go branch: https://stackoverflow.com/questions/42761820/how-to-get-another-branch-instead-of-default-branch-with-go-get
