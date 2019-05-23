@@ -1,0 +1,4 @@
+sudo deluser dennisfakeme
+sudo delgroup dennisfakeme
+cd /home
+sudo rm -r dennisfakeme
