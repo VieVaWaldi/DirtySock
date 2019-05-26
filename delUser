@@ -1,4 +1,6 @@
 sudo deluser dennisfakeme
+sudo userdel dennisfakeme
 sudo delgroup dennisfakeme
+sudo groupdel dennisfakeme
 cd /home
 sudo rm -r dennisfakeme
