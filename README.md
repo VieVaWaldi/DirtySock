@@ -24,8 +24,7 @@ https://blog.gopheracademy.com/advent-2015/debugging-with-delve/
 
 $ dlv debug github.com/snapcore/snapd/cmd/snapd
 
-$ break ucrednet.go:88
+$ break ucrednet.go:38
 
 $ continue
 
-$ step ...
