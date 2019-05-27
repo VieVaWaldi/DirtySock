@@ -15,3 +15,9 @@ snapd source code: https://github.com/snapcore/snapd (HACKING.md zum debuggen)
 snapd API doc: https://github.com/snapcore/snapd/wiki/REST-API
 
 go branch: https://stackoverflow.com/questions/42761820/how-to-get-another-branch-instead-of-default-branch-with-go-get
+
+### Debug:
+
+https://github.com/go-delve/delve/blob/master/Documentation/installation/linux/install.md
+
+dlv debug github.com/snapcore/snapd/cmd/snapd
