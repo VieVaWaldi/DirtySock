@@ -20,4 +20,6 @@ go branch: https://stackoverflow.com/questions/42761820/how-to-get-another-branc
 
 https://github.com/go-delve/delve/blob/master/Documentation/installation/linux/install.md
 
-dlv debug github.com/snapcore/snapd/cmd/snapd
+$ dlv debug github.com/snapcore/snapd/cmd/snapd
+$ break ucrednet.go:88
+$ step ...
