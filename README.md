@@ -20,15 +20,14 @@ go branch: https://stackoverflow.com/questions/42761820/how-to-get-another-branc
 
 https://github.com/go-delve/delve/blob/master/Documentation/installation/linux/install.md
 
+Muss unter sudo -s installiert werden:
+Davor GOPATH exportieren
+$ cd go/src/git/go-delve/delve
+$ make install
+
 https://blog.gopheracademy.com/advent-2015/debugging-with-delve/
 
-(If not working:)
-(cd go/../dlv)
-(make install)
-
 $ dlv debug github.com/snapcore/snapd/cmd/snapd
-
 $ break ucrednet.go:38
-
 $ continue
 
