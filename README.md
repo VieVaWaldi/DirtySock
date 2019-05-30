@@ -31,3 +31,8 @@ $ dlv debug github.com/snapcore/snapd/cmd/snapd
 $ break ucrednet.go:38
 $ continue
 
+### Debug GUI:
+
+Noch nicht installiert
+
+https://github.com/aarzilli/gdlv
